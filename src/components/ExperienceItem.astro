@@ -36,9 +36,15 @@ const { title, company, description, descriptionAsList, link, date } =
     class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
   >
     {description}
-    <ul class="list-disc">
-      {descriptionAsList.map((e) => <li>{e}</li>)}
-    </ul>
+    {
+      descriptionAsList && (
+        <ul class="list-disc">
+          {descriptionAsList.map((e) => (
+            <li>{e}</li>
+          ))}
+        </ul>
+      )
+    }
     {
       link && (
         <LinkInline href={link}>
