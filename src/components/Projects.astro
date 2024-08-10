@@ -2,6 +2,8 @@
 import GitHub from "./icons/GitHub.astro";
 import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import Typescript from "./icons/Typescript.astro";
+import Chakraui from "./icons/Chakraui.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -16,34 +18,27 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#3178C6] text-white",
+    icon: Typescript,
+  },
+  CHAKRAUI: {
+    name: "Chakra UI",
+    class: "bg-[#ffffff] text-black",
+    icon: Chakraui,
+  },
 };
+
 const PROJECTS = [
-  // {
-  //   title: "SVGL - A beautiful library with SVG logos",
-  //   description:
-  //     "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-  //   link: "https://svgl.vercel.app/",
-  //   github: "https://github.com/pheralb/svgl",
-  //   image: "/projects/svgl.webp",
-  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
-  // },
-  // {
-  //   title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-  //   description:
-  //     "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-  //   link: "https://adventjs.dev",
-  //   image: "/projects/adventjs.webp",
-  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
-  // },
   {
-    title:
-      "Conquer Island - Conquista la isla dominada por los leones",
+    title: "Conquer Island - Conquista la isla dominada por los leones",
     description:
       "Conquista la isla dominada por los leones. Creado desde cero con Next.js, React y Tailwind CSS.",
     link: "https://conquer-island-revamped.vercel.app/",
     github: "https://github.com/luisthedragon/conquer-island-revamped",
     image: "/projects/conquer-island-revamped.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.CHAKRAUI],
   },
   {
     title: "Virtual Casino - Demo de Casino virtual",
@@ -51,16 +46,16 @@ const PROJECTS = [
       "Demo de Casino virtual. Creado desde cero con Next.js, React y Tailwind CSS.",
     link: "https://luisthedragon-casino.vercel.app/",
     image: "/projects/luisthedragon-casino.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.CHAKRAUI],
   },
   {
     title: "T3 Gallery - Galería de fotos",
     description:
-      "Galería de fotos. Creado con Nextjs y Tailwind CSS.",
+      "Galería de fotos personal. Ten tus fotos favoritas siempre a la mano! Creado desde cero con Next.js, React y Tailwind CSS.",
     link: "https://t3gallery-gilt-psi.vercel.app/",
     github: "https://github.com/luisthedragon/t3gallery",
     image: "/projects/t3-gallery.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT],
   },
 ];
 ---
