@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Typescript from "./icons/Typescript.astro";
 import Chakraui from "./icons/Chakraui.astro";
+import ChatGPT from "./icons/ChatGPT.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -28,9 +29,23 @@ const TAGS = {
     class: "bg-[#ffffff] text-black",
     icon: Chakraui,
   },
+  CHATGPT: {
+    name: "ChatGPT API",
+    class: "bg-white text-black",
+    icon: ChatGPT,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: "Detective GPT - Cada decisión cuenta",
+    description:
+      "Ponte en la piel de un detective y sumérgete en misterios llenos de sorpresas. Co-creado para la Hackathon de Vercel AI SDK x Midudev",
+    link: "https://criminologa-procedural.vercel.app/",
+    github: "https://github.com/Hecze/DetectiveGPT",
+    image: "/projects/detective-gpt.png",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.CHATGPT],
+  },
   {
     title: "Conquer Island - Conquista la isla dominada por los leones",
     description:
@@ -79,7 +94,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-row flex-wrap mb-2 gap-x-2 gap-y-2">
               {tags.map((tag) => (
                 <li>
                   <span
